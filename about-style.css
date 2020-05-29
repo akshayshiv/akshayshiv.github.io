@@ -1,13 +1,25 @@
-h1 {
-    font-size: 75px;
+
+h1.heading {
+    font-size: 30px;
     color: #CBC69D;
-    text-align: center;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    display: inline-block;    
 }
-h2{
-    font-size: xx-large;
-    color: white;
-    text-align: center;
+h2.heading{
+    font-size: 15px;
+    color: #686655;
+    text-align: left;
+    padding: 0;
+    margin: 0;
     font-style: italic;
+    display: inline-block;
+}
+h2.about-me{
+    border: none;
+    color: #CBC69D;
+    font-size: 70px;
 }
 h3{
     max-width:  800px;
@@ -16,19 +28,22 @@ h3{
     text-align: center;
     line-height: 40px;
     display: inline-block;
+    margin-left: 50px;
 }
 h4{
     font-size: xx-large;
     color: #191A1A;
 }
 div.picture{
+    margin-top: 30px;
     float: right;
-    margin-bottom: 10em;
     display: flex;
 }
 .middle{
     background: #CBC69D;
     display: flex;
+    margin-top: 90px;
+    margin-bottom: 100px;
 }
 .column-left {
     flex: 100%;
@@ -50,11 +65,25 @@ div.picture{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    float: right;
   }
 .back{
     position:absolute; 
     top:0; 
     right:0;
     font-size: 30px;
+    display: inline-block;
+
+}
+.title-heading{
+    text-align: center;
+    font-size: 50px;
+}
+.borderbox{
+    padding: 10px ;
+    border: 1px solid #7c0000;
+    background-color:#7c0000;
+    float: left;
+}
+.main{
+   text-align: center;
 }

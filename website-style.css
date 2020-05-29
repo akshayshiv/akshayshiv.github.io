@@ -1,6 +1,6 @@
 
 h1 {
-    font-size: 50px;
+    font-size: 30px;
     color: #CBC69D;
     text-align: left;
     padding: 0;
@@ -8,13 +8,18 @@ h1 {
     display: inline-block;
 }
 h2{
-    font-size: 20px;
+    font-size: 15px;
     color: #686655;
     text-align: left;
     padding: 0;
     margin: 0;
     font-style: italic;
     display: inline-block;
+}
+h3{
+    border: none;
+    color: #CBC69D;
+    font-size: 70px;
 }
 .button {
     background: #191A1A;
@@ -26,8 +31,20 @@ h2{
     margin: 4px 2px;
     cursor: pointer;
     float: right;
-    float: top;
 }
-.title{
+
+.borderbox{
+    padding: 10px ;
+    border: 1px solid #7c0000;
+    background-color:#7c0000;
     float: left;
+}
+.main{
+    height: 1000px;
+    width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -500px;
 }
