@@ -1,4 +1,7 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 h1 {
     font-size: 30px;
     color: #CBC69D;
@@ -20,6 +23,7 @@ h3{
     border: none;
     color: #CBC69D;
     font-size: 70px;
+    text-align: center;
 }
 .button {
     background: #191A1A;

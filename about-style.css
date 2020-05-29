@@ -16,10 +16,12 @@ h2.heading{
     font-style: italic;
     display: inline-block;
 }
-h2.about-me{
+h1.about-me{
     border: none;
-    color: #CBC69D;
+    color: #191A1A;
     font-size: 70px;
+    text-align: center;
+    margin-left: 300px;
 }
 h3{
     max-width:  800px;
@@ -35,7 +37,7 @@ h4{
     color: #191A1A;
 }
 div.picture{
-    margin-top: 30px;
+    margin-top: 90px;
     float: right;
     display: flex;
 }
@@ -83,7 +85,4 @@ div.picture{
     border: 1px solid #7c0000;
     background-color:#7c0000;
     float: left;
-}
-.main{
-   text-align: center;
 }
