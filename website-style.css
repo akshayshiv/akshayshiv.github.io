@@ -1,0 +1,33 @@
+
+h1 {
+    font-size: 50px;
+    color: #CBC69D;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+h2{
+    font-size: 20px;
+    color: #686655;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    display: inline-block;
+}
+.button {
+    background: #191A1A;
+    border: none;
+    color: #CBC69D;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    float: top;
+}
+.title{
+    float: left;
+}
