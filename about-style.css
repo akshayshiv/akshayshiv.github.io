@@ -1,4 +1,7 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 h1.heading {
     font-size: 30px;
     color: #CBC69D;
