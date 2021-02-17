@@ -19,13 +19,11 @@ h2.heading{
     font-style: italic;
     display: inline-block;
 }
-h1.about-me{
-    border: none;
+.button-back:hover{
     color: #191A1A;
-    font-size: 70px;
-    text-align: center;
-    margin-left: 300px;
+    background: #CBC69D;
 }
+
 h3{
     max-width:  800px;
     font-size: large;
@@ -40,15 +38,15 @@ h4{
     color: #191A1A;
 }
 div.picture{
-    margin-top: 40px;
+    margin-top: 200px;
     float: right;
     display: flex;
 }
 .middle{
     background: #CBC69D;
     display: flex;
-    margin-top: 90px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 70px;
 }
 .column-left {
     flex: 100%;
@@ -61,7 +59,7 @@ div.picture{
 .border-right {
     border-right: 5px solid#191A1A
 }
-.button {
+.button-back {
     background: #191A1A;
     border: none;
     color: #CBC69D;
@@ -70,13 +68,12 @@ div.picture{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
-.back{
     position:absolute; 
     top:0; 
     right:0;
     font-size: 30px;
     display: inline-block;
+    transition-duration: 0.7s;
 
 }
 .title-heading{
@@ -88,4 +85,5 @@ div.picture{
     border: 1px solid #7c0000;
     background-color:#7c0000;
     float: left;
+    transition: 0.7s;
 }
