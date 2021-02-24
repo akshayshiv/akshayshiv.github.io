@@ -8,7 +8,6 @@ body{
     border: 1px solid #7c0000;
     background-color:#7c0000;
     float: left;
-    transition: 0.7s;
 }
 h1.heading {
     font-size: 30px;
@@ -82,4 +81,15 @@ img.reddit{
 img.website{
     top:25%;
     right:17%;
+}
+
+.footnote{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #CBC69D;
+    color: #191A1A;
+    text-align: center;
+    font-size:  30px;
 }

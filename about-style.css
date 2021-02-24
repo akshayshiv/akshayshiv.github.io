@@ -49,7 +49,7 @@ div.picture{
     margin-bottom: 70px;
 }
 .column-left {
-    flex: 100%;
+    flex: 80%;
     padding: 10px;
 }
 .column-right {
@@ -85,5 +85,4 @@ div.picture{
     border: 1px solid #7c0000;
     background-color:#7c0000;
     float: left;
-    transition: 0.7s;
 }
