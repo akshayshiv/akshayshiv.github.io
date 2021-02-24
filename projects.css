@@ -27,6 +27,29 @@ h2.heading{
     font-style: italic;
     display: inline-block;
 }
+
+h3.heading_small_projects{
+    font-size: 50px;
+    font-style: italic;
+    color: #CBC69D;
+    text-align: left;
+    position:absolute;
+    top:20%;
+    left:20%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left:-100px;
+}
+h3.heading_large_projects{
+    font-style: italic;
+    font-size: 50px;
+    color: #CBC69D;
+    text-align: left;
+    position:absolute;
+    top:20%;
+    left:75%;
+    margin-top:-50px; /* this is half the height of your div*/  
+    margin-left:-100px;
+}
 .button-back {
     background: #191A1A;
     border: none;
@@ -42,4 +65,21 @@ h2.heading{
     font-size: 30px;
     display: inline-block;
     transition: 0.7s;
+}
+.button-back:hover{
+    color: #191A1A;
+    background: #CBC69D;
+}
+img.insta{
+    top:25%;
+    left:17%;
+}
+img.reddit{
+    top:50%;
+    left:18.5%;
+}
+
+img.website{
+    top:25%;
+    right:17%;
 }
