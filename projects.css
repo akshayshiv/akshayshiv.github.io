@@ -88,13 +88,3 @@ img.cmsc{
     right: 18%
 }
 
-.footnote{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #CBC69D;
-    color: #191A1A;
-    text-align: center;
-    font-size:  30px;
-}
