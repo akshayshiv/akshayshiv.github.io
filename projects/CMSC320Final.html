@@ -15620,10 +15620,6 @@ A hexbin might be hard to interpret, considering its infrequent use. For more in
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">confusion_mtrx</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">prediction</span><span class="p">):</span>
-    <span class="c1"># if not isinstance(actual, np.ndarray):</span>
-    <span class="c1">#     print(type(actual))</span>
-    <span class="c1">#     prediction = tf.make_ndarray(prediction)</span>
-    <span class="c1">#     actual = tf.make_ndarray(actual)</span>
     <span class="c1"># View results as a confusion matrix to visualize our performance metrics</span>
     <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">prediction</span><span class="p">)</span>
     <span class="n">cm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">actual</span><span class="p">,</span> <span class="n">prediction</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]))</span>
