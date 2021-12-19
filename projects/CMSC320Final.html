@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head> <meta charset ="UTF-8"\>
-
+<head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Predicting_potential_Strokes (1)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Predicting_potential_Strokes</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -844,6 +843,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 | The full license is in the file LICENSE, distributed with this software.
 |----------------------------------------------------------------------------*/
 
+@charset "UTF-8";
 /*!
 
 Copyright 2015-present Palantir Technologies, Inc. All rights reserved.
@@ -16395,8 +16395,7 @@ weighted avg       0.93      0.84      0.88      1473
 <li>(32, 0.0, sigmoid, 1)</li>
 </ol>
 <p>As you can see above, our first layer's input is 10 (for the number of features we are training on). We then scale up the number of nodes for the hidden layers in powers of, reaching a maximum of 128 nodes.</p>
-<p>We also use a somewhat new activation function know as <a href="https://arxiv.org/pdf/1606.08415.pdf">gelu</a> or Gaussian error linear unit. We chose gelu over relu or leaky relu because lots of modern research and models use them. As we understand it, gelu is meant to try to emulate relu and dropout in a deterministic way, so that an input x will always give the same output y. Moreover, the probability of dropout is supposedly higher when using gelu, so it theoretically should help with any overfitting.
-<a href="https://production-media.paperswithcode.com/methods/Screen_Shot_2020-05-27_at_12.48.44_PM.png">https://production-media.paperswithcode.com/methods/Screen_Shot_2020-05-27_at_12.48.44_PM.png</a> USE THIS IMAGE</p>
+<p>We also use a somewhat new activation function know as <a href="https://arxiv.org/pdf/1606.08415.pdf">gelu</a> or Gaussian error linear unit. We chose gelu over relu or leaky relu because lots of modern research and models use them. As we understand it, gelu is meant to try to emulate relu and dropout in a deterministic way, so that an input x will always give the same output y. Moreover, the probability of dropout is supposedly higher when using gelu, so it theoretically should help with any overfitting. <img src="./image.jpg" alt="Image"></p>
 <p>In addition, we decided to also include some dropouts in order to combat overfitting later in training. Finally our last layer with a dense of 1 and a sigmoid <a href="https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html#elu">activation function</a> is needed to consolidate our outputs to a single probability. We chose sigmoid becuase we are working with a binary classification, although we could also theoretically work with softmax.</p>
 <p>The optimizer that we use is SGD or stochastic gradient descent. In general, sgd is pretty effective with CNN and simple MLP models, so we decided to give it and the adam optimizer a try. We found that <a href="https://scikit-learn.org/stable/modules/sgd.html">sgd</a> was more effective than adam. 
 We also looked into initializing <a href="https://towardsdatascience.com/stochastic-gradient-descent-with-momentum-a84097641a5d">sgd with a momentum</a> of ~0.9 but found that it gave us worse results.
@@ -16906,7 +16905,7 @@ weighted avg       0.81      0.83      0.79      1473
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>We have gone through a standard Data Science pipeline. We identified our variable of interest, strokes, and utilized machine learning models to understand what factors most affect one's likelihood of having one and to predict whether an individual will suffer one based off some identifying features used in our dataset we gathered. We have learned through this process that BMI, average glucose level, and age are the most significant factors that contribute to suffering a stroke. We demonstrated how several machine learning models can be used to predict stroke and that the model that is most appropriate for a given research organization will depend on what tradeoffs they are willing to take. For example, they may value predicting true positives more than predicting true negatives, in which case the Perceptron ANN might be most appropriate. We also noted that a reliable machine learning model would need to somehow address the problem of predicting true positives with the same accuracy as true negatives. This problem had much to do with the specifics of our dataset, but the simple fact that most people do not suffer strokes makes this a difficult problem to solve when training a model. Nonetheless, the process we demonstrated is only the first step when it comes to understanding exactly how strokes work and how they can be prevented, but it is an important first step that can be used to guide further research decisions. For more information about strokes and how they can be prevented, visit this <a href="https://www.cdc.gov/stroke/healthy_living.htm">website. </a>.</p>
+<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>We have gone through a standard Data Science pipeline. We identified our variable of interest, strokes, and utilized machine learning models to understand what factors most affect one's likelihood of having one and to predict whether an individual will suffer one based off some identifying features used in our dataset we gathered. We have learned through this process that BMI, average glucose level, and age are the most significant factors that contribute to suffering a stroke. We demonstrated how several machine learning models can be used to predict stroke and that the model that is most appropriate for a given research organization will depend on what tradeoffs they are willing to take. For example, they may value predicting true positives more than predicting true negatives, in which case the Perceptron ANN might be most appropriate. We also noted that a reliable machine learning model would need to somehow address the problem of predicting true positives with the same accuracy as true negatives. This problem had much to do with the specifics of our dataset, but the simple fact that most people do not suffer strokes makes this a difficult problem to solve when training a model. Nonetheless, the process we demonstrated is only the first step when it comes to understanding exactly how strokes work and how they can be prevented, but it is an important first step that can be used to guide further research decisions. For more information about strokes and how they can be prevented, visit this <a href="https://www.cdc.gov/stroke/healthy_living.htm">website</a>.</p>
 
 </div>
 </div>
